@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>
+      Decodificador de Texto - Challenge Programa ONE - Letícia Pittezr
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h3>Challenge 01 - Programa ONE</h3>
+        <img
+          className="logo"
+          src="./assets/img/alura-logo.svg"
+          alt="logotipo da alura"
+        />
+      </div>
+    </header>
+    <main>
+      <div class="grid-container">
+        <div class="first-box">
+          <h1>Decodificador de Texto</h1>
+          <div class="text-subtitle">
+            <p>Insira o texto que você deseja codificar ou decodificar:</p>
+          </div>
+          <textarea
+            class="text-area"
+            id="text-area"
+            name="texto"
+            cols="33"
+            rows="5"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <div class="area-info">
+            <i class="bx bxs-info-circle"></i>
+            <p>Só é permitido criptografar letras sem acento.</p>
+          </div>
+          <div class="button-default">
+            <button class="btn-criptografar" id="btn-criptografar">
+              <i class="bx bxs-lock-alt"></i> Criptografar
+            </button>
+            <button class="btn-descriptografar" id="btn-descriptografar" disabled>
+              <i class="bx bxs-lock-open-alt"></i> Descriptografar
+            </button>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <div class="second-box">
+          <div class="text-result">Seu texto codificado/decodificado aqui:</div>
+          <textarea
+            class="area-result"
+            name="texto"
+            cols="33"
+            rows="5"
+            id="result"
+            disabled
+          ></textarea>
+          <div class="button-default">
+            <button class="btn-copy" id="btn-copy" disabled>
+              <i class='bx bx-copy' /></i> Copiar
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>desenvolvido por: Letícia Pittezr <a href="https://www.linkedin.com/in/leticiapittezr/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a><a href="https://github.com/lepittezr/" target="_blank"><i class='bx bxl-github' ></i></a></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

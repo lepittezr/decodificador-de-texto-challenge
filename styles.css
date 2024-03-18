@@ -1,0 +1,261 @@
+:root {
+  --white: #fff;
+  --black: #000;
+
+  --gray-100: #d9d9d9;
+  --gray-400: #b5b4b4;
+  --gray-700: #232323;
+  --gray-800: #1e1e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  font-family: "ABeeZee", sans-serif;
+}
+
+body {
+  background: var(--gray-700);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  font-size: 1.2rem;
+  margin: 1rem 4rem 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 3px 3fr;
+  margin: 0 2rem;
+  gap: 2rem;
+}
+
+.first-box {
+  color: var(--gray-100);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-box h1 {
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 8px;  
+}
+
+.text-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-800);
+  width: 70%;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.text-area {
+  background-color: var(--gray-400);
+  width: 80%;
+  height: 30vh;
+  margin-top: 1rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.5rem;
+  border: 2px solid var(--black);
+  border-radius: 12px;
+}
+
+.area-info {
+  display: flex;
+  align-items: start;
+  margin: 0.5rem;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--white);
+}
+
+.area-info i {
+  font-size: 1rem;
+}
+
+.button-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 5rem 0;
+  gap: 2rem;
+}
+
+.button-default button {
+  background: var(--gray-100);
+  width: 10rem;
+  height: 2.5rem;
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px var(--black);
+  text-align: center;
+  transition: 0.5s;
+  font-size: 0.9rem;
+}
+
+.button-default i {
+  font-size: 1rem;
+}
+
+.button-default button:not(:disabled):hover {
+  background: var(--gray-800);
+  color: var(--gray-100);
+  border: 1px solid var(--white);
+}
+
+.btn-descriptografar:disabled {
+  cursor: not-allowed;
+}
+
+.second-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-100);
+  width: 100%;
+}
+
+.text-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-800);
+  width: 70%;
+  height: 2.5rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.area-result {
+  background: var(--gray-400) url("./assets/img/criptographic.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: var(--black);
+  font-weight: bold;
+  width: 70%;
+  height: 30vh;
+  margin: 1rem 0 2rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.5rem;
+  border: 2px solid var(--black);
+  border-radius: 12px;
+}
+
+.btn-copy:disabled {
+  cursor: not-allowed;
+}
+
+.separator {
+  background: var(--gray-100);
+  grid-column: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+footer a i {
+  color: var(--white);
+}
+
+footer i {
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 26.875rem) {
+
+  .header-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 2rem 0.5rem;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  .header-container img {
+    width: 8rem;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+
+  .first-box h1 {
+    font-size: 2.3rem;
+  }
+  
+  .text-subtitle {
+    margin-top: 1rem;
+    width: 90%;
+    font-size: 0.77rem;
+  }
+
+  .text-area {
+    width: 20rem;
+    height: 8rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .area-info {
+    font-size: 0.6rem;
+  }
+
+  .button-default {
+    margin-top: 0.2rem;
+  }
+  .button-default button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .text-result {
+    margin: 0 0 1rem;
+    font-size: 0.77rem;
+  }
+
+  .area-result {
+    width: 20rem;
+    height: 8rem;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.8rem;
+  }
+}
